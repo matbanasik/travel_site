@@ -80,20 +80,20 @@ html, body{
 				height: 80px;
 				display: flex;
 				align-items: center;
-				
+				justify-content: space-around;
+                
 				#logo{
-					margin-left: 120px;
-					margin-right: 315px;
+					
 				}
 				
 				.navbar{
 					list-style: none;
 					font-size: 2rem;
 					display: flex;
-					margin: 0;
 					font-weight: 300;
 					padding: 0;
-					
+                    
+                    
 					li{
 						margin-right: 50px;
 						
@@ -161,7 +161,7 @@ html, body{
 		background-color: #2376C8;
 		opacity: .9;
 		position: absolute;
-		bottom: -65px;
+		top: 625px;
 		left: 0;
 		color: #FFFFFF;
 		height: 200px;
@@ -175,7 +175,7 @@ html, body{
 			display: block;
 			width: 30%;
 			margin: 0;
-			margin-left: 250px;
+			margin-left: 10%;
 			
 		}
 	}
@@ -303,7 +303,8 @@ html, body{
 			flex-wrap: wrap;
 			background-image: url('../images/pic2.gif');
 			background-size: cover;
-			
+            
+            
 			h2{
 				font-family: 'BigNoodleTitling';
 				font-weight: 100;
@@ -378,7 +379,7 @@ html, body{
 			}
 			
 			.deal{
-				width: 20vw;
+				width: 25vw;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -786,6 +787,27 @@ html, body{
 		border-top: 1px solid #EBEBEB;
 		
 	}
+}
+
+
+@media only screen and (max-width: 1250px){
+    
+    #about{
+        position: absolute;
+		top: 120px !important;
+		left: 0;
+        width: 100%;
+
+        h1{
+            font-size: 3.5rem;
+            width: 100%;
+            text-align: center;
+            }
+
+            h2{
+                display: none;
+            }
+        }
 }
 
 @media only screen and (max-width: 768px){
